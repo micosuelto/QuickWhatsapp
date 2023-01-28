@@ -1,0 +1,34 @@
+@import "vars";
+
+#credits-page .container {
+  font-family: "Roboto", sans-serif;
+  & > * {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-weight: 900;
+    .lt {
+      text-decoration: line-through;
+      text-decoration-color: $secondary;
+    }
+  }
+
+  .github-link {
+    border: 2px solid #ccc;
+    border-radius: 50rem;
+    padding: 0.35rem 1rem;
+    text-decoration: none;
+    gap: 0.5rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+  }
+}

@@ -1,0 +1,26 @@
+@import 'vars';
+
+.wrap-phonenumber{
+    position: relative;
+}
+
+.react-tel-input .form-control{
+    width: 100%;
+    font-size: 2rem;
+    border: 0 none;
+    height: 50px;
+    font-family: $oswald;
+    font-weight: bold;
+    text-align: left;
+    
+    &::placeholder{
+        color: #ccc;
+    }
+}
+
+
+
+.react-tel-input .flag-dropdown {
+    background-color: transparent;
+    border: 0 none;
+}

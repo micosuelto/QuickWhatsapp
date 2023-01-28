@@ -1,0 +1,59 @@
+@import 'vars';
+
+.container-numbers{
+   // background-color: $third;
+    padding-top: 1vh;
+    margin-top: 1vh;
+}
+
+.wrap-numbers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3 , 4fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: $oswald;
+    .number{
+        font-size: 2.5rem;
+        font-weight: 700;
+        background: $third;
+        @include btn-circle;
+        &:hover{
+            color: $secondary;
+            transform: scale(.9);
+        }
+        &:active{
+            background-color: $secondary;
+            color: white;
+            transform: scale(1.2);
+        }
+        &.number-0{
+            grid-column: 2 / 3;
+        }
+        &.number-delete{
+            background-color: transparent;
+            grid-column: 3 / 4;
+
+        }
+    }
+
+
+}
+
+#cleanInput{
+    @include btn-circle;
+    background-color: red;
+    color: white;
+    width: 34px;
+    height: 34px;
+    font-size: 1.3rem;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    &:hover{
+        transform:  scale(.9);
+    }
+    &:active{
+        transform: scale(1.2);
+    }
+}

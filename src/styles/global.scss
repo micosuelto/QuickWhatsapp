@@ -1,0 +1,29 @@
+@import 'scss-reset/_reset.scss';
+@import 'fonts';
+@import 'vars';
+
+
+
+body{
+    background-color: white;
+    font-family: $roboto;
+    font-size: 1.4rem;
+}
+
+a{
+    color: $secondary;
+    text-decoration: none;
+}
+.text-secondary{
+    color: $secondary;
+}
+
+.container{
+    max-width: 350px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    @media (min-width: $md) {
+        max-width: 400px;        
+    }
+}
