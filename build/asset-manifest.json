@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.244d09e3.css",
+    "main.js": "/static/js/main.4a3b2ae0.js",
+    "static/js/651.7adb0eed.chunk.js": "/static/js/651.7adb0eed.chunk.js",
+    "static/media/oswald-v49-latin-700.svg": "/static/media/oswald-v49-latin-700.20bafec7c61853e1daa9.svg",
+    "static/media/oswald-v49-latin-regular.svg": "/static/media/oswald-v49-latin-regular.cda95197bdef1d58d592.svg",
+    "static/media/oswald-v49-latin-700.ttf": "/static/media/oswald-v49-latin-700.f40780dc4776084b4b84.ttf",
+    "static/media/oswald-v49-latin-regular.ttf": "/static/media/oswald-v49-latin-regular.2467215cb8c04278bd0f.ttf",
+    "static/media/oswald-v49-latin-700.woff": "/static/media/oswald-v49-latin-700.76642dce3172f5983c44.woff",
+    "static/media/oswald-v49-latin-regular.woff": "/static/media/oswald-v49-latin-regular.774a8c8d4b0b993dc3b5.woff",
+    "static/media/oswald-v49-latin-700.eot": "/static/media/oswald-v49-latin-700.1750a34c5c7a7d54d426.eot",
+    "static/media/oswald-v49-latin-regular.eot": "/static/media/oswald-v49-latin-regular.3fadb8c7ca85ec2211bf.eot",
+    "static/media/oswald-v49-latin-700.woff2": "/static/media/oswald-v49-latin-700.c844a55c70de8d13ea46.woff2",
+    "static/media/oswald-v49-latin-regular.woff2": "/static/media/oswald-v49-latin-regular.37ffdd2667b8a0045f0d.woff2",
+    "index.html": "/index.html",
+    "main.244d09e3.css.map": "/static/css/main.244d09e3.css.map",
+    "main.4a3b2ae0.js.map": "/static/js/main.4a3b2ae0.js.map",
+    "651.7adb0eed.chunk.js.map": "/static/js/651.7adb0eed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.244d09e3.css",
+    "static/js/main.4a3b2ae0.js"
+  ]
+}
