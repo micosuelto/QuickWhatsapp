@@ -8,9 +8,9 @@ import App from "./routes/App.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.Fragment>
+  <Fragment.React>
     <App tab="home" />
-  </React.Fragment>
+  </Fragment.React>
 );
 
 // If you want to start measuring performance in your app, pass a function
