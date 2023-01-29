@@ -135,7 +135,10 @@ const Home = () => {
         onClickClean={onClickClean}
         onClickDelete={onClickDelete}
       />
-      <WhatsappBtn isBtnON={isBtnON} urlToWhatsapp={urlToWhatsapp} />
+      <WhatsappBtn 
+        isBtnON={isBtnON} 
+        urlToWhatsapp={urlToWhatsapp} 
+      />
       <Closure />
     </div>
   );

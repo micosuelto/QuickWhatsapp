@@ -14,15 +14,21 @@ $xl: 1280px;
 $xl2: 1536px;
   
 @mixin btn-circle{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
     border-radius: 50%;
     font-weight: 700;
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all .3s;
     transform-origin: center center;
+    @media (min-width: $sm) {
+        width: 80px;
+        height: 80px;       
+        font-size: 2.5rem;
+    }
+
 }
