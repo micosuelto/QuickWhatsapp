@@ -12,7 +12,7 @@
     grid-template-rows: repeat(3 , 4fr);
     justify-items: center;
     align-items: center;
-    gap: 1rem;
+    gap: .2rem;
     font-family: $oswald;
     .number{
         font-size: 2.5rem;
@@ -41,10 +41,14 @@
 
 }
 
+.number-delete{
+    color: $secondary;
+}
+
 #cleanInput{
     @include btn-circle;
-    background-color: red;
-    color: white;
+    background-color: transparent;
+    color: red;
     width: 34px;
     height: 34px;
     font-size: 1.3rem;
