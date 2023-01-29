@@ -16,6 +16,7 @@
     "babel-loader": "^9.1.2",
     "babel-plugin-macros": "^3.1.0",
     "eslint": "^8.32.0",
+    "firebase": "^9.16.0",
     "firebase-tools": "^11.21.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
