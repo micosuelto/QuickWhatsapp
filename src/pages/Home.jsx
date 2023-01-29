@@ -7,14 +7,19 @@ import WhatsappBtn from "../components/WhatsappBtn";
 import Closure from "../components/Closure";
 
 const Home = () => {
-  // Main Variables
-  let localStorageDialCode = localStorage.getItem("defaultDialCode");
-  let localStorageCountryCode = localStorage.getItem("defaultCountryCode");
+  //**** Main Variables ****//
+  let [localStorageDialCode, setLocalStorageDialCode] = useState(
+    localStorage.getItem("defaultDialCode")
+  );
+  let [localStorageCountryCode, setLocalStorageCountryCode] = useState(
+    localStorage.getItem("defaultCountryCode")
+  );
   const [phoneValue, setphoneValue] = useState(`${localStorageDialCode}`);
   const rawPhoneValue = `${phoneValue.replace(/\D/g, "")}`;
   const urlToWhatsapp = `https://wa.me/${rawPhoneValue}`;
 
-  // Enable elements when input is used
+  //**** Enable elements when input is used ****//
+
   const [isBtnON, setIsBtnON] = useState(false);
   useEffect(() => {
     if (rawPhoneValue.length > localStorage.defaultDialCode.length) {
@@ -23,27 +28,35 @@ const Home = () => {
       setIsBtnON(false);
     }
   }, [rawPhoneValue]);
-  
-  // LOCAL STORAGE
+
+  //**** Default Local Storage ****//
   if (!localStorageDialCode) {
-    localStorageDialCode = localStorage.setItem("defaultDialCode", "57");
+    setLocalStorageDialCode("57");
+    //setLocalStorageDialCode = localStorage.setItem("defaultDialCode", "57");
     return;
   }
   if (!localStorageCountryCode) {
-    localStorageCountryCode = localStorage.setItem("defaultCountryCode", "co");
+    setLocalStorageCountryCode("co");
+    //localStorageCountryCode = localStorage.setItem("defaultCountryCode", "co");
     return;
   }
 
+  //**** Basic Functions ****//
 
-
-  // Basic Functions
+  // Reset phone value
   const resetPhoneValue = () => {
-    setphoneValue(`${localStorageDialCode}`);
+    const resetPhoneCalc = rawPhoneValue.length -localStorage.defaultDialCode.length;
+    const phoneUpdated = rawPhoneValue.toString();
+    const phoneUpdatedDel = phoneUpdated.slice(0, -resetPhoneCalc);
+    setphoneValue(phoneUpdatedDel);
+    focusInput();
   };
+  // Focus input
   const focusInput = () => {
     document.querySelector(".form-control").focus();
   };
-  const updateDefaultCountry = (dialCode, countryCode, phoneValue) => {
+  // Update Local Storage
+  const updateDefaultCountry = (dialCode, countryCode) => {
     localStorage.setItem("defaultDialCode", dialCode);
     localStorage.setItem("defaultCountryCode", countryCode);
     console.log(
@@ -51,7 +64,7 @@ const Home = () => {
     );
   };
 
-  // Update Phone from Keyboard - Numbers
+  // Update Phone from Keyboard - Add Numbers
   const onClickNumber = (number) => {
     if (rawPhoneValue.length <= 15) {
       const phoneUpdated = rawPhoneValue.toString();
@@ -61,24 +74,35 @@ const Home = () => {
       return;
     }
   };
-
-  // Update Phone from Keyboard - Delete
+  // Update Phone from Keyboard - Delete Numbers
   const onClickDelete = () => {
     const phoneUpdated = rawPhoneValue.toString();
     const phoneUpdatedDel = phoneUpdated.slice(0, -1);
     setphoneValue(phoneUpdatedDel);
     focusInput();
   };
-
   // Clean Phone from X
   const onClickClean = () => {
     resetPhoneValue();
-    focusInput();
+  };
+
+  // Keyboard Functions - Enter - Escape - Suprim
+  const handleKeyDown = (event) => {
+    console.log('User pressed: ', event.key);
+    if (event.key === "Enter") {
+      console.log("Lets chat!");
+      window.open(urlToWhatsapp, "_blank");
+      return
+    }
+    if (event.key === "Escape" || event.key === "Delete") {
+      onClickClean();
+    }
   };
 
 
 
-  // Help Console.log Data
+  //**** Help Console.log Data ****//
+
   const showData = true;
   showData &&
     console.log(`
@@ -102,6 +126,7 @@ const Home = () => {
         localStorageCountryCode={localStorageCountryCode}
         setphoneValue={setphoneValue}
         updateDefaultCountry={updateDefaultCountry}
+        handleKeyDown={handleKeyDown}
       />
       <Keyboard
         isBtnON={isBtnON}
@@ -109,7 +134,10 @@ const Home = () => {
         onClickClean={onClickClean}
         onClickDelete={onClickDelete}
       />
-      <WhatsappBtn isBtnON={isBtnON} urlToWhatsapp={urlToWhatsapp} />
+      <WhatsappBtn 
+        isBtnON={isBtnON}
+        urlToWhatsapp={urlToWhatsapp} 
+      />
       <Closure />
     </div>
   );

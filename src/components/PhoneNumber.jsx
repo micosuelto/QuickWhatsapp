@@ -8,7 +8,10 @@ const PhoneNumber = ({
   setphoneValue,
   updateDefaultCountry,
   localStorageCountryCode,
+  handleKeyDown
 }) => {
+
+
 
   return (
     <div className="container">
@@ -29,8 +32,7 @@ const PhoneNumber = ({
             setphoneValue(`${phoneValue}`);
             updateDefaultCountry(
               country.dialCode,
-              country.countryCode,
-              phoneValue
+              country.countryCode
             );
           }}
           onFocus={(phoneValue, country, _) => {
@@ -39,6 +41,7 @@ const PhoneNumber = ({
               return;
             }
           }}
+          onKeyDown={handleKeyDown}
         />
       </div>
     </div>

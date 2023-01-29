@@ -1,25 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.244d09e3.css",
-    "main.js": "/static/js/main.4a3b2ae0.js",
+    "main.css": "/static/css/main.c0bff918.css",
+    "main.js": "/static/js/main.49035de8.js",
     "static/js/651.7adb0eed.chunk.js": "/static/js/651.7adb0eed.chunk.js",
-    "static/media/oswald-v49-latin-700.svg": "/static/media/oswald-v49-latin-700.20bafec7c61853e1daa9.svg",
-    "static/media/oswald-v49-latin-regular.svg": "/static/media/oswald-v49-latin-regular.cda95197bdef1d58d592.svg",
-    "static/media/oswald-v49-latin-700.ttf": "/static/media/oswald-v49-latin-700.f40780dc4776084b4b84.ttf",
-    "static/media/oswald-v49-latin-regular.ttf": "/static/media/oswald-v49-latin-regular.2467215cb8c04278bd0f.ttf",
-    "static/media/oswald-v49-latin-700.woff": "/static/media/oswald-v49-latin-700.76642dce3172f5983c44.woff",
-    "static/media/oswald-v49-latin-regular.woff": "/static/media/oswald-v49-latin-regular.774a8c8d4b0b993dc3b5.woff",
-    "static/media/oswald-v49-latin-700.eot": "/static/media/oswald-v49-latin-700.1750a34c5c7a7d54d426.eot",
-    "static/media/oswald-v49-latin-regular.eot": "/static/media/oswald-v49-latin-regular.3fadb8c7ca85ec2211bf.eot",
-    "static/media/oswald-v49-latin-700.woff2": "/static/media/oswald-v49-latin-700.c844a55c70de8d13ea46.woff2",
-    "static/media/oswald-v49-latin-regular.woff2": "/static/media/oswald-v49-latin-regular.37ffdd2667b8a0045f0d.woff2",
+    "static/media/roboto-bold-webfont.svg": "/static/media/roboto-bold-webfont.64bc7024bd7332caa408.svg",
+    "static/media/roboto-regular-webfont.svg": "/static/media/roboto-regular-webfont.f7da27b8d5954aba7a14.svg",
+    "static/media/oswald-v49-latin-700-webfont.svg": "/static/media/oswald-v49-latin-700-webfont.de0158d45b179e407e7a.svg",
+    "static/media/oswald-v49-latin-regular-webfont.svg": "/static/media/oswald-v49-latin-regular-webfont.cea132a782d1541725ad.svg",
+    "static/media/roboto-bold-webfont.eot": "/static/media/roboto-bold-webfont.d66a8325f63a251d265c.eot",
+    "static/media/roboto-regular-webfont.eot": "/static/media/roboto-regular-webfont.e707b420288f5d367e7e.eot",
+    "static/media/oswald-v49-latin-regular-webfont.eot": "/static/media/oswald-v49-latin-regular-webfont.4fe05b1d3098f78bec3e.eot",
+    "static/media/oswald-v49-latin-700-webfont.eot": "/static/media/oswald-v49-latin-700-webfont.4a7820576e0ffaa1f9d2.eot",
+    "static/media/roboto-bold-webfont.woff": "/static/media/roboto-bold-webfont.a5a29cdb42398c7440d1.woff",
+    "static/media/roboto-regular-webfont.woff": "/static/media/roboto-regular-webfont.62adc44d60faf236d50a.woff",
+    "static/media/oswald-v49-latin-700-webfont.woff": "/static/media/oswald-v49-latin-700-webfont.bd1ee8499708eca71ff7.woff",
+    "static/media/oswald-v49-latin-regular-webfont.woff": "/static/media/oswald-v49-latin-regular-webfont.2df967ce9d2c4d20ac2a.woff",
+    "static/media/roboto-bold-webfont.woff2": "/static/media/roboto-bold-webfont.4f7ebc0c13539838a247.woff2",
+    "static/media/roboto-regular-webfont.woff2": "/static/media/roboto-regular-webfont.952b38c91f715d28b5c3.woff2",
+    "static/media/oswald-v49-latin-regular-webfont.woff2": "/static/media/oswald-v49-latin-regular-webfont.b43cfd42abc884154fb2.woff2",
+    "static/media/oswald-v49-latin-700-webfont.woff2": "/static/media/oswald-v49-latin-700-webfont.b59d4f4c4738927f37ce.woff2",
     "index.html": "/index.html",
-    "main.244d09e3.css.map": "/static/css/main.244d09e3.css.map",
-    "main.4a3b2ae0.js.map": "/static/js/main.4a3b2ae0.js.map",
+    "main.c0bff918.css.map": "/static/css/main.c0bff918.css.map",
+    "main.49035de8.js.map": "/static/js/main.49035de8.js.map",
     "651.7adb0eed.chunk.js.map": "/static/js/651.7adb0eed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.244d09e3.css",
-    "static/js/main.4a3b2ae0.js"
+    "static/css/main.c0bff918.css",
+    "static/js/main.49035de8.js"
   ]
 }

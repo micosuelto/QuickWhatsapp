@@ -1,0 +1,21 @@
+[debug] [2023-01-29T01:15:03.902Z] ----------------------------------------------------------------------
+[debug] [2023-01-29T01:15:03.903Z] Command:       /opt/homebrew/Cellar/node/19.3.0/bin/node /opt/homebrew/bin/firebase init
+[debug] [2023-01-29T01:15:03.904Z] CLI Version:   11.21.0
+[debug] [2023-01-29T01:15:03.904Z] Platform:      darwin
+[debug] [2023-01-29T01:15:03.904Z] Node Version:  v19.3.0
+[debug] [2023-01-29T01:15:03.904Z] Time:          Sat Jan 28 2023 20:15:03 GMT-0500 (Colombia Standard Time)
+[debug] [2023-01-29T01:15:03.904Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-29T01:15:03.907Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-29T01:15:03.907Z] > authorizing via signed-in user (jesusvasquez384@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/jesus/Sites/QuickWhatsapp
+
