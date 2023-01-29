@@ -71,7 +71,7 @@ const Home = () => {
       const phoneUpdated = rawPhoneValue.toString();
       const phoneUpdatedDel = `${phoneUpdated} ${number}`;
       setphoneValue(`${phoneUpdatedDel}`);
-      focusInput();
+      //focusInput();
       return;
     }
   };
@@ -80,12 +80,12 @@ const Home = () => {
     const phoneUpdated = rawPhoneValue.toString();
     const phoneUpdatedDel = phoneUpdated.slice(0, -1);
     setphoneValue(phoneUpdatedDel);
-    focusInput();
+    //focusInput();
   };
   // Clean Phone from X
   const onClickClean = () => {
     resetPhoneValue();
-    focusInput();
+    //focusInput();
   };
 
   // Keyboard Functions - Enter - Escape - Suprim
