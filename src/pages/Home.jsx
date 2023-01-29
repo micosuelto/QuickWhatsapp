@@ -22,39 +22,27 @@ const Home = () => {
 
   const [isBtnON, setIsBtnON] = useState(false);
   useEffect(() => {
-    if (rawPhoneValue.length > localStorage.defaultDialCode.length) {
+    if (rawPhoneValue.length > localStorageDialCode.length) {
       setIsBtnON(true);
     } else {
       setIsBtnON(false);
     }
-  }, [rawPhoneValue]);
+  }, [rawPhoneValue, localStorageDialCode]);
 
   //**** Default Local Storage ****//
   if (!localStorageDialCode) {
     setLocalStorageDialCode("57");
-    //setLocalStorageDialCode = localStorage.setItem("defaultDialCode", "57");
+    localStorageDialCode = localStorage.setItem("defaultDialCode", "57");
     return;
   }
   if (!localStorageCountryCode) {
     setLocalStorageCountryCode("co");
-    //localStorageCountryCode = localStorage.setItem("defaultCountryCode", "co");
+    localStorageCountryCode = localStorage.setItem("defaultCountryCode", "co");
     return;
   }
 
   //**** Basic Functions ****//
 
-  // Reset phone value
-  const resetPhoneValue = () => {
-    const resetPhoneCalc = rawPhoneValue.length -localStorage.defaultDialCode.length;
-    const phoneUpdated = rawPhoneValue.toString();
-    const phoneUpdatedDel = phoneUpdated.slice(0, -resetPhoneCalc);
-    setphoneValue(phoneUpdatedDel);
-    focusInput();
-  };
-  // Focus input
-  const focusInput = () => {
-    document.querySelector(".form-control").focus();
-  };
   // Update Local Storage
   const updateDefaultCountry = (dialCode, countryCode) => {
     localStorage.setItem("defaultDialCode", dialCode);
@@ -62,6 +50,19 @@ const Home = () => {
     console.log(
       `Country saved in localstorage: +${localStorage.defaultDialCode} / ${localStorage.defaultCountryCode}`
     );
+  };
+
+  // Reset phone value
+  const resetPhoneValue = () => {
+    const resetPhoneCalc = rawPhoneValue.length - localStorageDialCode.length;
+    const phoneUpdated = rawPhoneValue.toString();
+    const phoneUpdatedDel = phoneUpdated.slice(0, -resetPhoneCalc);
+    setphoneValue(phoneUpdatedDel);
+    return;
+  };
+  // Focus input
+  const focusInput = () => {
+    document.querySelector(".form-control").focus();
   };
 
   // Update Phone from Keyboard - Add Numbers
@@ -84,22 +85,22 @@ const Home = () => {
   // Clean Phone from X
   const onClickClean = () => {
     resetPhoneValue();
+    focusInput();
   };
 
   // Keyboard Functions - Enter - Escape - Suprim
   const handleKeyDown = (event) => {
-    console.log('User pressed: ', event.key);
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && isBtnON) {
       console.log("Lets chat!");
       window.open(urlToWhatsapp, "_blank");
-      return
+      return;
     }
-    if (event.key === "Escape" || event.key === "Delete") {
-      onClickClean();
+    if (event.key === "Escape" && isBtnON) {
+      console.log("Phone value cleaned");
+      resetPhoneValue();
+      return;
     }
   };
-
-
 
   //**** Help Console.log Data ****//
 
@@ -108,7 +109,7 @@ const Home = () => {
     console.log(`
     >> HELP DATA INFO <<
     >> LocalStorage DialCode: ${localStorage.defaultDialCode} (Lenght: ${
-      localStorage.defaultDialCode.length
+      localStorageDialCode.length
     })
     >> LocalStorage CountryCode: ${localStorage.defaultCountryCode} 
     >> Current raw phoneValue is: ${rawPhoneValue} (Lenght: ${
@@ -134,10 +135,7 @@ const Home = () => {
         onClickClean={onClickClean}
         onClickDelete={onClickDelete}
       />
-      <WhatsappBtn 
-        isBtnON={isBtnON}
-        urlToWhatsapp={urlToWhatsapp} 
-      />
+      <WhatsappBtn isBtnON={isBtnON} urlToWhatsapp={urlToWhatsapp} />
       <Closure />
     </div>
   );
