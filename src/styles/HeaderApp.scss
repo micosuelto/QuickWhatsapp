@@ -5,6 +5,16 @@
     padding: 1vh;
     border-bottom: 1px solid lightgray;
     font-family: $oswald;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: .5rem;        
+        font-size: .7rem;
+        @media (min-width: $md) {
+        font-size: 1.25rem;
+        }
+    }
     h1{
         text-transform: uppercase;
         font-weight: 700;
@@ -19,11 +29,6 @@
     }
     .slogan{
         text-transform: uppercase;
-        font-size: .7rem;
-        opacity: .7;
-        @media (min-width: $md) {
-        font-size: 1.25rem;
-        }
-
     }
+
 }
