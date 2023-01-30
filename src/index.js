@@ -6,10 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import ReactGA from 'react-ga';
 const TRACKING_ID = "G-X3DY82NWV8"; // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
-ReactGA.event({
-  category: 'User',
-  action: 'Created an Account'
-});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
