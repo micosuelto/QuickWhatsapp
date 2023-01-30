@@ -5,6 +5,7 @@ import PhoneNumber from "../components/PhoneNumber";
 import Keyboard from "../components/Keyboard";
 import WhatsappBtn from "../components/WhatsappBtn";
 import Closure from "../components/Closure";
+import { SuperSEO } from "react-super-seo";
 
 const Home = () => {
   //**** Main Variables ****//
@@ -121,6 +122,20 @@ const Home = () => {
 
   return (
     <div id="home-page">
+      <SuperSEO
+        title="QuickWhatsapp | Chat with unsaved numbers."
+        description="Chat with unsaved numbers."
+        lang="en"
+        openGraph={{
+          ogImage: {
+            ogImage: "op",
+            ogImageAlt: "QuickWhatsapp",
+            ogImageWidth: 1200,
+            ogImageHeight: 630,
+            ogImageType: "image/png",
+          },
+        }}
+      />
       <InfoApp />
       <PhoneNumber
         phoneValue={phoneValue}
@@ -135,10 +150,7 @@ const Home = () => {
         onClickClean={onClickClean}
         onClickDelete={onClickDelete}
       />
-      <WhatsappBtn 
-        isBtnON={isBtnON} 
-        urlToWhatsapp={urlToWhatsapp} 
-      />
+      <WhatsappBtn isBtnON={isBtnON} urlToWhatsapp={urlToWhatsapp} />
       <Closure />
     </div>
   );
