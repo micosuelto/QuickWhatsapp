@@ -12,7 +12,7 @@ const Credits = () => {
       <div id="credits-page">
         <div className="container">
           <h2>
-            My mom hates saving contacts just so she can write to them on 
+            My mom detests saving contacts just so she can write to them on 
             <span className="text-secondary"> Whatsapp</span>.
           </h2>
           <h2>

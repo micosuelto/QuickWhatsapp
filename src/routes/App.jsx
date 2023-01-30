@@ -7,10 +7,7 @@ import "../styles/global.scss";
 import Home from "../pages/Home";
 import Credits from "../pages/Credits";
 import NotFound from "../pages/NotFound";
-// Import Google Analytics
-import ReactGA from "react-ga";
-const TRACKING_ID = "G-X3DY82NWV8";
-ReactGA.initialize(TRACKING_ID);
+
 
 const App = () => {
   return (
