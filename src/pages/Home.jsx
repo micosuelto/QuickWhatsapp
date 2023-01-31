@@ -43,8 +43,8 @@ const Home = () => {
     updateDefaultCountry("57", "co");
     return;
   }
-  if (!phoneValue){
-    setphoneValue(`${localStorageDialCode}`);
+  if (phoneValue === null) {
+    setphoneValue(`${localStorage.defaultDialCode}`);
     return;
   }
 
