@@ -2,7 +2,7 @@
 
 .react-tel-input .form-control{
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 30px;
     border: 0 none;
     height: $phoneHeight;
     line-height: $phoneHeight;
@@ -12,7 +12,7 @@
     background-color: $white;
     letter-spacing: -.05rem;
     @media (min-width: $xsm) {
-        font-size: 2.2rem;
+        font-size: 36px;
     }
     
     &::placeholder{
@@ -21,7 +21,9 @@
 }
 
 #home-page.co .react-tel-input .form-control{
-    font-size: 2.6rem;
+    @media (min-width: $xsm) {
+       font-size: 44px;
+    }
 }
 
 
