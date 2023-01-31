@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.60675278.css",
-    "main.js": "/static/js/main.b52d3fdf.js",
+    "main.js": "/static/js/main.43f5944f.js",
     "static/js/651.a46e002a.chunk.js": "/static/js/651.a46e002a.chunk.js",
     "static/media/roboto-bold-webfont.svg": "/static/media/roboto-bold-webfont.64bc7024bd7332caa408.svg",
     "static/media/roboto-regular-webfont.svg": "/static/media/roboto-regular-webfont.f7da27b8d5954aba7a14.svg",
@@ -21,11 +21,11 @@
     "static/media/oswald-v49-latin-700-webfont.woff2": "/static/media/oswald-v49-latin-700-webfont.b59d4f4c4738927f37ce.woff2",
     "index.html": "/index.html",
     "main.60675278.css.map": "/static/css/main.60675278.css.map",
-    "main.b52d3fdf.js.map": "/static/js/main.b52d3fdf.js.map",
+    "main.43f5944f.js.map": "/static/js/main.43f5944f.js.map",
     "651.a46e002a.chunk.js.map": "/static/js/651.a46e002a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.60675278.css",
-    "static/js/main.b52d3fdf.js"
+    "static/js/main.43f5944f.js"
   ]
 }

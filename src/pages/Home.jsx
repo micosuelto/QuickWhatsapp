@@ -28,24 +28,7 @@ const Home = () => {
     }
   }, [rawPhoneValue, localStorageDialCode]);
 
-
   //**** Default Local Storage ****//
-  if (!localStorageDialCode) {
-    setLocalStorageDialCode("57");
-    localStorageDialCode = localStorage.setItem("defaultDialCode", "57");
-    return;
-  }
-  if (!localStorageCountryCode) {
-    setLocalStorageCountryCode("co");
-    localStorageCountryCode = localStorage.setItem("defaultCountryCode", "co");
-    return;
-  }
-
-
-
-
-  //**** Basic Functions ****//
-
   // Update Local Storage
   const updateDefaultCountry = (dialCode, countryCode) => {
     localStorage.setItem("defaultDialCode", dialCode);
@@ -55,6 +38,15 @@ const Home = () => {
     );
   };
 
+  if (!localStorageDialCode && !localStorageCountryCode) {
+    setLocalStorageDialCode("57");
+    setLocalStorageCountryCode("co");
+    updateDefaultCountry("57", "co");
+    return;
+  }
+
+  //**** Basic Functions ****//
+
   // Reset phone value
   const resetPhoneValue = () => {
     const resetPhoneCalc = rawPhoneValue.length - localStorageDialCode.length;
@@ -63,10 +55,6 @@ const Home = () => {
     setphoneValue(phoneUpdatedDel);
     return;
   };
-  // Focus input
-  //const focusInput = () => {
-  //  document.querySelector(".form-control").focus();
-  //};
 
   // Update Phone from Keyboard - Add Numbers
   const onClickNumber = (number) => {
