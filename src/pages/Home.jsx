@@ -60,9 +60,9 @@ const Home = () => {
     return;
   };
   // Focus input
-  const focusInput = () => {
-    document.querySelector(".form-control").focus();
-  };
+  //const focusInput = () => {
+  //  document.querySelector(".form-control").focus();
+  //};
 
   // Update Phone from Keyboard - Add Numbers
   const onClickNumber = (number) => {
