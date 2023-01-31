@@ -109,6 +109,8 @@ const Home = () => {
 
   return (
     <div id="home-page">
+      <InfoApp />
+
       <SuperSEO
         title="QuickWhatsapp | Chat with unsaved numbers."
         description="Simple PWA to start chat in Whatsapp to users that are not in our contacts."
@@ -137,7 +139,6 @@ const Home = () => {
         onClickDelete={onClickDelete}
         urlToWhatsapp={urlToWhatsapp}
       />
-      <InfoApp />
     </div>
   );
 };

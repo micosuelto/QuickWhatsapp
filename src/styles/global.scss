@@ -20,10 +20,12 @@ a{
 }
 
 .container{
-    padding-left: 1rem;
-    padding-right: 1rem;
     margin: 0 auto;
     width: 100%;
+    &:not(.no-gutter){
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     @media (min-width: $xsm) {
         max-width: 350px;
     }
@@ -32,7 +34,7 @@ a{
 #home-page{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px auto 60px;
+    grid-template-rows: 60px $phoneHeight auto ;
     height: 100vh;
-    gap: 0.5rem;
+    gap: 0;
 }

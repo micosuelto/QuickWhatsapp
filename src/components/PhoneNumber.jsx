@@ -14,7 +14,7 @@ const PhoneNumber = ({
 
 
   return (
-      <div className="wrap-phonenumber container">
+      <div className="wrap-phonenumber container no-gutter">
         <PhoneInput
           placeholder="Phone number"
           value={phoneValue}

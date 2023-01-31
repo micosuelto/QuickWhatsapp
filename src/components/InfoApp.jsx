@@ -3,7 +3,7 @@ import "../styles/InfoApp.scss";
 
 const InfoApp = () => {
   return (
-    <footer className="InfoApp">
+    <header className="InfoApp">
       <div className="container">
         <div className="app-title">
           <h1 className="app-name text-3xl font-bold underline">
@@ -15,7 +15,7 @@ const InfoApp = () => {
             Development by<br />micosuelto
         </a>
       </div>
-    </footer>
+    </header>
   );
 };
 
