@@ -18,7 +18,6 @@ const Home = () => {
   const urlToWhatsapp = `https://wa.me/${rawPhoneValue}`;
 
   //**** Enable elements when input is used ****//
-
   const [isBtnON, setIsBtnON] = useState(false);
   useEffect(() => {
     if (rawPhoneValue.length > localStorageDialCode.length) {
@@ -42,6 +41,10 @@ const Home = () => {
     setLocalStorageDialCode("57");
     setLocalStorageCountryCode("co");
     updateDefaultCountry("57", "co");
+    return;
+  }
+  if (!phoneValue){
+    setphoneValue(`${localStorageDialCode}`);
     return;
   }
 
