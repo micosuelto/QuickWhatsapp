@@ -12,6 +12,9 @@
     align-items: center;
     gap: .2rem;
     font-family: $oswald;
+    @media (max-width: $xsm) {
+        max-width: 260px;
+    }
     .number{
         font-weight: 700;
         color: $black;
