@@ -102,7 +102,7 @@ const Home = () => {
   };
 
   //**** Help Console.log Data ****//
-  const showData = false;
+  const showData = true;
   showData &&
     console.log(`
     >> HELP DATA INFO <<
