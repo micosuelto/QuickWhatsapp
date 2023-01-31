@@ -108,7 +108,7 @@ const Home = () => {
   `);
 
   return (
-    <div id="home-page">
+    <div id="home-page" className={`${localStorage.defaultCountryCode}`}>
       <InfoApp />
 
       <SuperSEO
@@ -117,7 +117,7 @@ const Home = () => {
         lang="en"
         openGraph={{
           ogImage: {
-            ogImage: "open-graph-image.png",
+            ogImage: "/open-graph-image.png",
             ogImageAlt: "QuickWhatsapp",
             ogImageWidth: 1200,
             ogImageHeight: 630,

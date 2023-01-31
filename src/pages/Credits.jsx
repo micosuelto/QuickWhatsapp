@@ -1,5 +1,4 @@
 import React from "react";
-import InfoApp from "../components/InfoApp";
 import "../styles/global.scss";
 import "../styles/credits.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,16 +9,16 @@ const Credits = () => {
   return (
     <React.Fragment>
       <SuperSEO
-        title="Credits | React Super SEO"
-        description="React SEO component with OpenGraph and Twitter Cards support."
+        title="QuickWhatsapp | Web development by micosuelto."
+        description="Simple PWA to start chat in Whatsapp to users that are not in our contacts."
         lang="en"
         openGraph={{
           ogImage: {
-            ogImage: "http://placekitten.com/1200/630",
-            ogImageAlt: "Kittens",
+            ogImage: "/open-graph-image.png",
+            ogImageAlt: "QuickWhatsapp",
             ogImageWidth: 1200,
             ogImageHeight: 630,
-            ogImageType: "image/jpeg",
+            ogImageType: "image/png",
           },
         }}
       />
