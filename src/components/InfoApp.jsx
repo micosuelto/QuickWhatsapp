@@ -12,7 +12,7 @@ const InfoApp = () => {
           <h2 className="slogan">Chat with unsaved numbers.</h2>
         </div>
         <a href='/credits' title="View credits" className="info">
-            Development by<br />micosuelto
+            Development<br />by micosuelto
         </a>
       </div>
     </header>

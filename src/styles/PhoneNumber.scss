@@ -1,12 +1,12 @@
 @import 'vars';
 
 .react-tel-input .form-control{
+    font-family: $bebas;
     width: 100%;
     font-size: 30px;
     border: 0 none;
     height: $phoneHeight;
     line-height: $phoneHeight;
-    font-family: $oswald;
     font-weight: normal;
     text-align: left;
     background-color: $white;
@@ -23,7 +23,7 @@
 #home-page.co .react-tel-input .form-control{
     font-size: 36px;
     @media (min-width: $xsm) {
-       font-size: 44px;
+       font-size: 50px;
     }
 }
 

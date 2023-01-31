@@ -2,10 +2,8 @@
 
 .InfoApp{
     border-bottom: 1px solid lightgray;
-    font-family: "oswaldregular";
     bottom: 0;
     background: white;
-    font-family: $oswald;
     .container{
         display: flex;
         align-items: center;
@@ -15,11 +13,12 @@
     }
     h1{
         text-transform: uppercase;
-        font-weight: 700;
-        line-height: 1.1;
-        font-size: 1rem;
-        @media (min-width: $xsm) {
-            font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 32px;
+        transition: all .5s;
+        @media (min-width: $md) {
+            font-size: 42px;
         }
         span{
             color: $secondary;
@@ -27,7 +26,6 @@
     }
     .slogan{
         text-transform: uppercase;
-        font-size: .8rem;
         white-space: nowrap;
         text-overflow: ellipsis;
     }

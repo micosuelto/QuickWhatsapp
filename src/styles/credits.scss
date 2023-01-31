@@ -1,18 +1,27 @@
 @import "vars";
 
+#credits-page{
+  background-color: $secondary;
+  color: #9dcfc9;
+  min-height: 100vh;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  a{
+    color: $third;
+  }
+}
+
 #credits-page .container {
   & > * {
-    margin-top: 1rem;
     margin-bottom: 1rem;
     line-height: 1.1;
   }
   h2 {
     font-size: 1.5rem;
     line-height: 1.1;
-    font-weight: 900;
-    .lt {
-      text-decoration: line-through;
-      text-decoration-color: $secondary;
+    font-weight: 400;
+    .text-secondary {
+      color: $third;
     }
   }
 

@@ -32,13 +32,11 @@ const Credits = () => {
             <span className="text-secondary"> Whatsapp</span>.
           </h2>
           <h2>
-            This is a simple app<br />
-            for those who are suffering from the same.
+            This is a simple app for those who are suffering from the same.
           </h2>
 
           <p>
-            It's my first PWA with ReactJS.<br />
-            Feel free to punish those lines.
+            It's my first PWA with ReactJS. Feel free to punish those lines.
           </p>
           <p>
             This is my GitHub.
