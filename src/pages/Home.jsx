@@ -6,13 +6,13 @@ import Keyboard from "../components/Keyboard";
 import { SuperSEO } from "react-super-seo";
 
 const Home = () => {
-  //**** Main Variables ****//
   let [localStorageDialCode, setLocalStorageDialCode] = useState(
     localStorage.getItem("defaultDialCode")
   );
   let [localStorageCountryCode, setLocalStorageCountryCode] = useState(
     localStorage.getItem("defaultCountryCode")
   );
+  //**** Main Variables ****//
   const [phoneValue, setphoneValue] = useState(`${localStorageDialCode}`);
   const rawPhoneValue = `${phoneValue.replace(/\D/g, "")}`;
   const urlToWhatsapp = `https://wa.me/${rawPhoneValue}`;
@@ -28,6 +28,7 @@ const Home = () => {
     }
   }, [rawPhoneValue, localStorageDialCode]);
 
+
   //**** Default Local Storage ****//
   if (!localStorageDialCode) {
     setLocalStorageDialCode("57");
@@ -39,6 +40,9 @@ const Home = () => {
     localStorageCountryCode = localStorage.setItem("defaultCountryCode", "co");
     return;
   }
+
+
+
 
   //**** Basic Functions ****//
 
