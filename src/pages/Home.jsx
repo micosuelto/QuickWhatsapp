@@ -41,12 +41,10 @@ const Home = () => {
     setLocalStorageDialCode("57");
     setLocalStorageCountryCode("co");
     updateDefaultCountry("57", "co");
-    return;
-  }
-  if (phoneValue === null) {
     setphoneValue(`${localStorage.defaultDialCode}`);
     return;
   }
+
 
   //**** Basic Functions ****//
 
