@@ -25,6 +25,9 @@ const Credits = () => {
       />
       <div id="credits-page">
         <div className="container">
+          <p>
+            <img src="logo.svg" alt="QuickWhatsapp" title="QuickWhatsapp" width="90px" />
+          </p>
           <h2>
             My mom detests saving contacts just so she can write to them on 
             <span className="text-secondary"> Whatsapp</span>.
@@ -52,8 +55,6 @@ const Credits = () => {
           </p>
         </div>
       </div>
-
-      <InfoApp />
     </React.Fragment>
   );
 };
