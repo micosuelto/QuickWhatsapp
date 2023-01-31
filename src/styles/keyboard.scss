@@ -20,18 +20,17 @@
     align-items: center;
     justify-content: center;
     transform-origin: center center;
-    width: 100%;
+    width: auto;
     transition: all 0.3s;
     font-weight: 700;
-    color: #17171f;
-    background: #ece5dd;
     aspect-ratio: auto 1 / 1;
-    height: auto;
+    height: 100%;
+    max-height: 14vh;
     font-size: 2.2rem;
-    color: $black;
     background: $third;
+    color: $black;
 
-    &:hover {
+    &:focus {
       color: $secondary;
       transform: scale(0.9);
     }
