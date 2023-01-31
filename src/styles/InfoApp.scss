@@ -1,12 +1,9 @@
 @import 'vars';
 
-.HeaderApp{
-    padding: 0.5rem 0;
+.InfoApp{
     border-top: 1px solid lightgray;
     font-family: "oswaldregular";
-    position: fixed;
     bottom: 0;
-    width: 100%;
     background: white;
     font-family: $oswald;
     .container{
@@ -14,10 +11,7 @@
         align-items: center;
         justify-content: space-between;
         gap: .5rem;        
-        font-size: .7rem;
-        @media (min-width: $md) {
-        font-size: 1.25rem;
-        }
+        height: 60px;
     }
     h1{
         text-transform: uppercase;
@@ -33,10 +27,14 @@
     }
     .slogan{
         text-transform: uppercase;
+        font-size: .8rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     .info{
         text-align: right;
         line-height: 1.1;
+        font-size: .8rem;
     }
 
 }

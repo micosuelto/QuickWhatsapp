@@ -5,8 +5,10 @@
     color: darken($color: $third, $amount: 20);
     grid-column: 2 / 3;
     grid-row: 5 / 6;
-    @include btn-circle;
     font-size: 3rem !important;
+    border-radius: 50%;
+    aspect-ratio: auto 1 / 1;
+    width: auto;
 
     &:not(.active){
         cursor: not-allowed;

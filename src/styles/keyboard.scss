@@ -1,67 +1,83 @@
-@import 'vars';
+@import "vars";
 
-.container-numbers{
-    margin-bottom: 50px;
+.container-numbers {
+  margin-bottom: 50px;
 }
 
-.wrap-numbers{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3 , 4fr);
-    justify-items: center;
+.wrap-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 0.2rem;
+  font-family: "oswaldregular";
+  align-content: stretch;
+  width: 100%;
+  height: 100%;
+  font-family: $oswald;
+
+  & > * {
+    text-align: center;
+    border-radius: 0.5rem;
+    display: flex;
     align-items: center;
-    gap: .2rem;
-    font-family: $oswald;
-    @media (max-width: $xsm) {
-        max-width: 260px;
+    justify-content: center;
+    transform-origin: center center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+    @media (min-width: $sm) {
+      font-size: 2rem;
     }
-    .number{
-        font-weight: 700;
-        color: $black;
-        background: $third;
-        @include btn-circle;
-        &:hover{
-            color: $secondary;
-            transform: scale(.9);
-        }
-        &:active{
-            background-color: $secondary;
-            color: $white;
-            transform: scale(1.2);
-        }
-        &.number-0{
-            grid-column: 2 / 3;
-        }
-        &.number-delete{
-            background-color: transparent;
-            grid-column: 3 / 4;
-
-        }
+    @media (min-width: $md) {
+      font-size: 2.5rem;
     }
-    .number.number-delete{
-        color: $secondary;
+  }
+
+  .number {
+    font-weight: 700;
+    color: $black;
+    background: $third;
+    &:hover {
+      color: $secondary;
+      transform: scale(0.9);
     }
-
-
-}
-
-.number-delete{
+    &:active {
+      background-color: $secondary;
+      color: $white;
+      transform: scale(1.2);
+    }
+    &.number-0 {
+      grid-column: 2 / 3;
+    }
+    &.number-delete {
+      background-color: transparent;
+      grid-column: 3 / 4;
+    }
+  }
+  .number.number-delete {
     color: $secondary;
+  }
 }
 
-#cleanInput{
-    @include btn-circle;
-    background-color: transparent;
-    color: red;
-    width: 34px;
-    height: 34px;
-    font-size: 1.3rem;
-    grid-column: 1/2;
-    grid-row: 4/5;
-    &:hover{
-        transform:  scale(.9);
-    }
-    &:active{
-        transform: scale(1.2);
-    }
+.number-delete {
+  color: $secondary;
+}
+
+#cleanInput {
+  background-color: transparent;
+  color: red;
+  width: 34px;
+  height: 34px;
+  font-size: 1.3rem;
+  grid-column: 1/2;
+  grid-row: 4/5;
+  &:hover {
+    transform: scale(0.9);
+  }
+  &:active {
+    transform: scale(1.2);
+  }
 }

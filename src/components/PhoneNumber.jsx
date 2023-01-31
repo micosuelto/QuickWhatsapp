@@ -14,8 +14,7 @@ const PhoneNumber = ({
 
 
   return (
-    <div className="container">
-      <div className="wrap-phonenumber">
+      <div className="wrap-phonenumber container">
         <PhoneInput
           placeholder="Phone number"
           value={phoneValue}
@@ -43,7 +42,6 @@ const PhoneNumber = ({
           }}
           onKeyDown={handleKeyDown}
         />
-      </div>
     </div>
   );
 };
