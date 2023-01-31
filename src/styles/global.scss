@@ -2,8 +2,6 @@
 @import 'fonts';
 @import 'vars';
 
-
-
 body{
     background-color: $white;
     color: $black;
@@ -34,7 +32,7 @@ a{
 #home-page{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px $phoneHeight auto ;
+    grid-template-rows: $headerHeight $phoneHeight auto ;
     height: 100vh;
     gap: 0;
 }
