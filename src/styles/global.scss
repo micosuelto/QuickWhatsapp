@@ -23,8 +23,8 @@ a{
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0 auto;
-    max-width: 350px;        
-
-    @media (min-width: $md) {
+    max-width: 320px;        
+    @media (min-width: $sm) {
+        max-width: 400px;
     }
 }
