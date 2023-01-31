@@ -23,7 +23,6 @@ const Credits = () => {
           },
         }}
       />
-      <InfoApp />
       <div id="credits-page">
         <div className="container">
           <h2>
@@ -53,6 +52,8 @@ const Credits = () => {
           </p>
         </div>
       </div>
+
+      <InfoApp />
     </React.Fragment>
   );
 };

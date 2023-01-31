@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import InfoApp from "../components/HeaderApp";
 import PhoneNumber from "../components/PhoneNumber";
 import Keyboard from "../components/Keyboard";
-import Closure from "../components/Closure";
 import { SuperSEO } from "react-super-seo";
 
 const Home = () => {
@@ -134,7 +133,6 @@ const Home = () => {
           },
         }}
       />
-      <InfoApp />
       <PhoneNumber
         phoneValue={phoneValue}
         localStorageCountryCode={localStorageCountryCode}
@@ -149,7 +147,7 @@ const Home = () => {
         onClickDelete={onClickDelete}
         urlToWhatsapp={urlToWhatsapp}
       />
-      <Closure />
+      <InfoApp />
     </div>
   );
 };
