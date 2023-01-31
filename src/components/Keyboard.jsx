@@ -2,10 +2,16 @@ import React from "react";
 import "../styles/keyboard.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDeleteLeft, faXmark } from "@fortawesome/free-solid-svg-icons";
+import WhatsappBtn from "./WhatsappBtn";
 
-const Keyboard = ({ onClickNumber, onClickClean, onClickDelete, isBtnON }) => {
-  return (  
-
+const Keyboard = ({
+  onClickNumber,
+  onClickClean,
+  onClickDelete,
+  isBtnON,
+  urlToWhatsapp,
+}) => {
+  return (
     <React.Fragment>
       <section className="container-numbers">
         <div className="wrap-numbers container">
@@ -47,10 +53,15 @@ const Keyboard = ({ onClickNumber, onClickClean, onClickDelete, isBtnON }) => {
           )}
 
           {isBtnON && (
-            <div className="number number-delete" onClick={() => onClickDelete()}>
+            <div
+              className="number number-delete"
+              onClick={() => onClickDelete()}
+            >
               <FontAwesomeIcon icon={faDeleteLeft} />
             </div>
           )}
+
+          <WhatsappBtn isBtnON={isBtnON} urlToWhatsapp={urlToWhatsapp} />
         </div>
       </section>
     </React.Fragment>

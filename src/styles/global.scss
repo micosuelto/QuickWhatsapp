@@ -8,7 +8,7 @@ body{
     background-color: $white;
     color: $black;
     font-family: $roboto;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 a{
@@ -20,11 +20,11 @@ a{
 }
 
 .container{
-    max-width: 300px;
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0 auto;
+    max-width: 350px;        
+
     @media (min-width: $md) {
-        max-width: 400px;        
     }
 }

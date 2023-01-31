@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import InfoApp from "../components/HeaderApp";
 import PhoneNumber from "../components/PhoneNumber";
 import Keyboard from "../components/Keyboard";
-import WhatsappBtn from "../components/WhatsappBtn";
 import Closure from "../components/Closure";
 import { SuperSEO } from "react-super-seo";
 
@@ -104,8 +103,7 @@ const Home = () => {
   };
 
   //**** Help Console.log Data ****//
-
-  const showData = true;
+  const showData = false;
   showData &&
     console.log(`
     >> HELP DATA INFO <<
@@ -124,11 +122,11 @@ const Home = () => {
     <div id="home-page">
       <SuperSEO
         title="QuickWhatsapp | Chat with unsaved numbers."
-        description="Chat with unsaved numbers."
+        description="Simple PWA to start chat in Whatsapp to users that are not in our contacts."
         lang="en"
         openGraph={{
           ogImage: {
-            ogImage: "op",
+            ogImage: "open-graph-image.png",
             ogImageAlt: "QuickWhatsapp",
             ogImageWidth: 1200,
             ogImageHeight: 630,
@@ -149,8 +147,8 @@ const Home = () => {
         onClickNumber={onClickNumber}
         onClickClean={onClickClean}
         onClickDelete={onClickDelete}
+        urlToWhatsapp={urlToWhatsapp}
       />
-      <WhatsappBtn isBtnON={isBtnON} urlToWhatsapp={urlToWhatsapp} />
       <Closure />
     </div>
   );

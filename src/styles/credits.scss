@@ -1,8 +1,8 @@
 @import "vars";
 
 #credits-page .container {
-  font-family: "Roboto", sans-serif;
   & > * {
+    margin-top: 1rem;
     margin-bottom: 1rem;
     line-height: 1.1;
   }

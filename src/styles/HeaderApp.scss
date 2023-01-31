@@ -1,8 +1,7 @@
 @import 'vars';
 
 .HeaderApp{
-    margin: 0 0 1vh;
-    padding: 1vh;
+    padding: .5rem;
     border-bottom: 1px solid lightgray;
     font-family: $oswald;
     .container{
@@ -20,7 +19,7 @@
         font-weight: 700;
         line-height: 1.1;
         font-size: 1rem;
-        @media (min-width: $md) {
+        @media (min-width: $sm) {
             font-size: 1.6rem;
         }
         span{

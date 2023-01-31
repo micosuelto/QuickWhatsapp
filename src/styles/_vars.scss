@@ -16,20 +16,23 @@ $xl: 1280px;
 $xl2: 1536px;
   
 @mixin btn-circle{
-    font-size: 1.5rem;
+    font-size: 10vw;
     text-align: center;
     border-radius: 50%;
     font-weight: 700;
-    width: 50px;
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .3s;
+    transition: all 0.3s;
     transform-origin: center center;
+    aspect-ratio: auto 1 / 1;
+    width: 100%;
+    font-size: 1.5rem;
+    transition: all .3s;
     @media (min-width: $sm) {
-        width: 80px;
-        height: 80px;       
+        font-size: 2rem;
+    }
+    @media (min-width: $md) {
         font-size: 2.5rem;
     }
 

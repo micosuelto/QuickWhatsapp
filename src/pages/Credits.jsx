@@ -4,10 +4,25 @@ import "../styles/global.scss";
 import "../styles/credits.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { SuperSEO } from "react-super-seo";
 
 const Credits = () => {
   return (
     <React.Fragment>
+      <SuperSEO
+        title="Credits | React Super SEO"
+        description="React SEO component with OpenGraph and Twitter Cards support."
+        lang="en"
+        openGraph={{
+          ogImage: {
+            ogImage: "http://placekitten.com/1200/630",
+            ogImageAlt: "Kittens",
+            ogImageWidth: 1200,
+            ogImageHeight: 630,
+            ogImageType: "image/jpeg",
+          },
+        }}
+      />
       <InfoApp />
       <div id="credits-page">
         <div className="container">

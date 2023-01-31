@@ -15,7 +15,6 @@
     gap: .2rem;
     font-family: $oswald;
     .number{
-        font-size: 2.5rem;
         font-weight: 700;
         color: $black;
         background: $third;
@@ -37,6 +36,9 @@
             grid-column: 3 / 4;
 
         }
+    }
+    .number.number-delete{
+        color: $secondary;
     }
 
 
