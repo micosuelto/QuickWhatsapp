@@ -1,9 +1,5 @@
 @import "vars";
 
-.container-numbers {
-  margin-bottom: 50px;
-}
-
 .wrap-numbers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -17,29 +13,24 @@
   height: 100%;
   font-family: $oswald;
 
-  & > * {
+  .number {
     text-align: center;
-    border-radius: 0.5rem;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transform-origin: center center;
     width: 100%;
-    height: 100%;
-    font-size: 1.5rem;
     transition: all 0.3s;
-    @media (min-width: $sm) {
-      font-size: 2rem;
-    }
-    @media (min-width: $md) {
-      font-size: 2.5rem;
-    }
-  }
-
-  .number {
     font-weight: 700;
+    color: #17171f;
+    background: #ece5dd;
+    aspect-ratio: auto 1 / 1;
+    height: auto;
+    font-size: 2.2rem;
     color: $black;
     background: $third;
+
     &:hover {
       color: $secondary;
       transform: scale(0.9);
@@ -60,6 +51,28 @@
   .number.number-delete {
     color: $secondary;
   }
+  .number.buttonChat {
+    color: darken($color: $third, $amount: 20);
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    @media (min-width: $sm) {
+      font-size: 3rem !important;
+    }
+
+    &:not(.active) {
+      cursor: not-allowed;
+    }
+    &.active {
+      background-color: $primary;
+      color: $white;
+    }
+    &.active:hover {
+      transform: scale(0.9);
+    }
+    &.active:active {
+      transform: scale(1.2);
+    }
+  }
 }
 
 .number-delete {
@@ -69,9 +82,6 @@
 #cleanInput {
   background-color: transparent;
   color: red;
-  width: 34px;
-  height: 34px;
-  font-size: 1.3rem;
   grid-column: 1/2;
   grid-row: 4/5;
   &:hover {

@@ -46,7 +46,7 @@ const Keyboard = ({
         </div>
 
         {isBtnON && (
-          <div id="cleanInput" onClick={() => onClickClean()}>
+          <div id="cleanInput" className="number" onClick={() => onClickClean()}>
             <FontAwesomeIcon icon={faXmark} />
           </div>
         )}

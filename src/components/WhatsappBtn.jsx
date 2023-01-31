@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/BtnWhatsapp.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
@@ -11,12 +10,12 @@ const WhatsappBtn = ({ isBtnON, urlToWhatsapp }) => {
           target="_blank"
           rel="noreferrer"
           href={`${urlToWhatsapp}`}
-          className={`buttonChat active`}
+          className={`buttonChat number active`}
         >
           <FontAwesomeIcon icon={faWhatsapp} />
         </a>
       ) : (
-        <div className="buttonChat"><FontAwesomeIcon icon={faWhatsapp} /></div>
+        <div className="buttonChat number"><FontAwesomeIcon icon={faWhatsapp} /></div>
       )}
     </React.Fragment>
   );

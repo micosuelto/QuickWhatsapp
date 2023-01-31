@@ -24,7 +24,7 @@ a{
     padding-right: 1rem;
     margin: 0 auto;
     width: 100%;
-    @media (min-width: $sm) {
+    @media (min-width: $xsm) {
         max-width: 400px;
     }
 }
