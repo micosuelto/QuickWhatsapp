@@ -11,7 +11,7 @@
         align-items: center;
         justify-content: space-between;
         gap: .5rem;        
-        height: 60px;
+        height: $headerHeight;
     }
     h1{
         text-transform: uppercase;

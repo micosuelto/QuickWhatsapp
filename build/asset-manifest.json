@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b4391271.css",
+    "main.css": "/static/css/main.0e1d0a64.css",
     "main.js": "/static/js/main.1db6fd02.js",
     "static/js/651.a46e002a.chunk.js": "/static/js/651.a46e002a.chunk.js",
     "static/media/roboto-bold-webfont.svg": "/static/media/roboto-bold-webfont.64bc7024bd7332caa408.svg",
@@ -20,12 +20,12 @@
     "static/media/oswald-v49-latin-regular-webfont.woff2": "/static/media/oswald-v49-latin-regular-webfont.b43cfd42abc884154fb2.woff2",
     "static/media/oswald-v49-latin-700-webfont.woff2": "/static/media/oswald-v49-latin-700-webfont.b59d4f4c4738927f37ce.woff2",
     "index.html": "/index.html",
-    "main.b4391271.css.map": "/static/css/main.b4391271.css.map",
+    "main.0e1d0a64.css.map": "/static/css/main.0e1d0a64.css.map",
     "main.1db6fd02.js.map": "/static/js/main.1db6fd02.js.map",
     "651.a46e002a.chunk.js.map": "/static/js/651.a46e002a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4391271.css",
+    "static/css/main.0e1d0a64.css",
     "static/js/main.1db6fd02.js"
   ]
 }
