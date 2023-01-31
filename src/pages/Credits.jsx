@@ -14,7 +14,7 @@ const Credits = () => {
         lang="en"
         openGraph={{
           ogImage: {
-            ogImage: "/open-graph-image.png",
+            ogImage: "https://quickwhatsapp.newsite.co/open-graph-image.png",
             ogImageAlt: "QuickWhatsapp",
             ogImageWidth: 1200,
             ogImageHeight: 630,
