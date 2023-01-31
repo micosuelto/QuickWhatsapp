@@ -1,11 +1,12 @@
 @import 'vars';
 
 .HeaderApp{
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     border-top: 1px solid lightgray;
     font-family: "oswaldregular";
     position: fixed;
     bottom: 0;
+    width: 100%;
     background: white;
     font-family: $oswald;
     .container{
@@ -32,6 +33,10 @@
     }
     .slogan{
         text-transform: uppercase;
+    }
+    .info{
+        text-align: right;
+        line-height: 1.1;
     }
 
 }

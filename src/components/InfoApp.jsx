@@ -1,9 +1,9 @@
 import React from "react";
-import "../styles/HeaderApp.scss";
+import "../styles/InfoApp.scss";
 
-const HeaderApp = () => {
+const InfoApp = () => {
   return (
-    <header className="HeaderApp">
+    <footer className="HeaderApp">
       <div className="container">
         <div className="app-title">
           <h1 className="app-name text-3xl font-bold underline">
@@ -12,11 +12,11 @@ const HeaderApp = () => {
           <h2 className="slogan">Chat with unsaved numbers.</h2>
         </div>
         <a href='/credits' title="View credits" className="info">
-            by<br />micosuelto
+            Development by<br />micosuelto
         </a>
       </div>
-    </header>
+    </footer>
   );
 };
 
-export default HeaderApp;
+export default InfoApp;

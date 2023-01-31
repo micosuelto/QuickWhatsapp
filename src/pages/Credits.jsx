@@ -1,5 +1,5 @@
 import React from "react";
-import InfoApp from "../components/HeaderApp";
+import InfoApp from "../components/InfoApp";
 import "../styles/global.scss";
 import "../styles/credits.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

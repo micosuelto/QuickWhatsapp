@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import InfoApp from "../components/HeaderApp";
+import InfoApp from "../components/InfoApp";
 import PhoneNumber from "../components/PhoneNumber";
 import Keyboard from "../components/Keyboard";
 import { SuperSEO } from "react-super-seo";
