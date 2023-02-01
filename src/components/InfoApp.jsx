@@ -9,7 +9,7 @@ const InfoApp = () => {
           <h1 className="app-name text-3xl font-bold underline">
             Quick<span>Whatsapp</span>
           </h1>
-          <h2 className="slogan">Chat with unsaved numbers.</h2>
+          <h2 className="slogan">Chat with unsaved contacts.</h2>
         </div>
         <a href='/credits' title="View credits" className="info">
             Development<br />by <span className="text-secondary">micosuelto</span>

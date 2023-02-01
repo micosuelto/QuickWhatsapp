@@ -112,7 +112,7 @@ const Home = () => {
       <InfoApp />
 
       <SuperSEO
-        title="QuickWhatsapp | Chat with unsaved numbers."
+        title="QuickWhatsapp | Chat with unsaved contacts."
         description="Simple PWA to start chat in Whatsapp to users that are not in our contacts."
         lang="en"
         openGraph={{
