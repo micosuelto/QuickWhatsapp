@@ -1,7 +1,7 @@
 @import 'vars';
 
 .react-tel-input .form-control{
-    font-family: $bebas;
+    font-family: $fontBasic;
     width: 100%;
     font-size: 30px;
     border: 0 none;
@@ -9,21 +9,29 @@
     line-height: $phoneHeight;
     font-weight: normal;
     text-align: left;
-    background-color: $white;
-    letter-spacing: -.05rem;
+    background-color: $light;
+    letter-spacing: -.15rem;
+    padding-left: 50px;
     @media (min-width: $xsm) {
         font-size: 36px;
     }
+
     
     &::placeholder{
         color: #ccc;
     }
 }
 
+.react-tel-input .selected-flag:hover, 
+.react-tel-input .selected-flag:focus,
+.react-tel-input .flag-dropdown.open .selected-flag{
+    background-color: $light;
+}
+
 #home-page.co .react-tel-input .form-control{
-    font-size: 36px;
+    font-size: 40px;
     @media (min-width: $xsm) {
-       font-size: 50px;
+       font-size: 44px;
     }
 }
 

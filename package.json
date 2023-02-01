@@ -39,7 +39,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.57.1",
-    "style-loader": "^3.3.1"
+    "style-loader": "^3.3.1",
+    "terser-brunch": "^4.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

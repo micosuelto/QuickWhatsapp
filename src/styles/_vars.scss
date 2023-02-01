@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-$bebas: 'Bebas Neue', cursive;;
+$fontBasic: 'roboto_condensedregular', sans-serif;
+$fontBold: 'roboto_condensedbold', sans-serif;
 $black: #17171f;
+$light: #f7f3eb;
 $white: #fff;
 $primary: #25d366;
 $secondary: #075e54;
 $third: #ece5dd;
+$danger: #da4a4a;
 
 $xsm: 350px;
 $sm: 640px;
@@ -16,3 +17,4 @@ $xl2: 1536px;
 
 $headerHeight: 70px;
 $phoneHeight: 70px;
+$keyboardHeight: calc(100vh - $headerHeight - $phoneHeight);
