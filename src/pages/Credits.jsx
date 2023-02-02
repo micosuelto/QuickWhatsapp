@@ -1,9 +1,10 @@
-import React from "react";
-import "../styles/global.scss";
-import "../styles/credits.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { SuperSEO } from "react-super-seo";
+import React from 'react';
+import '../styles/global.scss';
+import '../styles/credits.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { SuperSEO } from 'react-super-seo';
+import logo from '../assets/logo.svg';
 
 const Credits = () => {
   return (
@@ -25,7 +26,7 @@ const Credits = () => {
       <div id="credits-page">
         <div className="container">
           <p>
-            <img src="./logo.svg" alt="QuickWhatsapp" title="QuickWhatsapp" width="90px" />
+            <img src={logo} alt="QuickWhatsapp" title="QuickWhatsapp" width="90px" height="90px" />
           </p>
           <h2>
             My mom detests saving contacts just so she can write to them on 
