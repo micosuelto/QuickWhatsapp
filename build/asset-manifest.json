@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.05a56bd0.css",
-    "main.js": "/static/js/main.074fab1a.js",
+    "main.js": "/static/js/main.6d861824.js",
     "static/js/651.a46e002a.chunk.js": "/static/js/651.a46e002a.chunk.js",
     "static/media/robotocondensed-bold-webfont.woff": "/static/media/robotocondensed-bold-webfont.48e20208790136222b47.woff",
     "static/media/robotocondensed-regular-webfont.woff": "/static/media/robotocondensed-regular-webfont.da5fd64870d6a2594247.woff",
     "static/media/robotocondensed-bold-webfont.woff2": "/static/media/robotocondensed-bold-webfont.3b496a93718c07dab3af.woff2",
     "static/media/robotocondensed-regular-webfont.woff2": "/static/media/robotocondensed-regular-webfont.152c26d9e1f8f9549ee6.woff2",
-    "static/media/logo.svg": "/static/media/logo.973927caa89e172563d8702b6609b891.svg",
+    "static/media/logo.svg": "/static/media/logo.64b289ae159b5b729ef209b307c8fe31.svg",
     "index.html": "/index.html",
     "main.05a56bd0.css.map": "/static/css/main.05a56bd0.css.map",
-    "main.074fab1a.js.map": "/static/js/main.074fab1a.js.map",
+    "main.6d861824.js.map": "/static/js/main.6d861824.js.map",
     "651.a46e002a.chunk.js.map": "/static/js/651.a46e002a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.05a56bd0.css",
-    "static/js/main.074fab1a.js"
+    "static/js/main.6d861824.js"
   ]
 }
