@@ -1,5 +1,15 @@
-.closure-info{
+@import 'vars';
+
+.share-icon{
     text-align: center;
-    margin: .5rem 0;
-    font-size: .7rem;
+    color: $secondary;
+    align-self: center;
+    cursor: default;
+    transition: all .2s ease;
+    &:hover{
+        color: $black;
+    }
+    svg{
+        margin-right: .5rem;
+    }
 }

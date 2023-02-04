@@ -32,7 +32,7 @@ a{
 #home-page{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: $headerHeight $phoneHeight auto ;
+    grid-template-rows: $headerHeight $phoneHeight auto 35px;
     height: 100vh;
     gap: 0;
 }

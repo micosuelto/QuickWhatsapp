@@ -1,4 +1,10 @@
 import React from 'react';
+import '../styles/ShareApp.scss';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
+
+
+
 
 const MobileShare = () => {
   const handleOnClick = () => {
@@ -20,6 +26,7 @@ const MobileShare = () => {
   
     return (
       <div className='share-icon' onClick={handleOnClick}>
+        <FontAwesomeIcon icon={faShareNodes} />
         Share this app
       </div>
     );
