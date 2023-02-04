@@ -3,7 +3,6 @@ import "../styles/NotFound.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { SuperSEO } from "react-super-seo";
-import openGraph from '../assets/open-graph-image.png';
 
 const NotFound = () => {
   return (
@@ -14,7 +13,7 @@ const NotFound = () => {
         lang="en"
         openGraph={{
           ogImage: {
-            ogImage: `${openGraph}`,
+            ogImage: 'https://quickwhatsapp.newsite.co/open-graph-image.jpg',
             ogImageAlt: "QuickWhatsapp",
             ogImageWidth: 1200,
             ogImageHeight: 630,

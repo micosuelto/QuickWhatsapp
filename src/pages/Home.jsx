@@ -118,7 +118,7 @@ const Home = () => {
         lang="en"
         openGraph={{
           ogImage: {
-            ogImage: '/open-graph-image.png',
+            ogImage: 'https://quickwhatsapp.newsite.co/open-graph-image.jpg',
             ogImageAlt: "QuickWhatsapp",
             ogImageWidth: 1200,
             ogImageHeight: 630,
