@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { SuperSEO } from 'react-super-seo';
 import logo from '../assets/logo.svg';
+import openGraph from '../assets/open-graph-image.png';
 
 const Credits = () => {
   return (
@@ -15,7 +16,7 @@ const Credits = () => {
         lang="en"
         openGraph={{
           ogImage: {
-            ogImage: "https://quickwhatsapp.newsite.co/open-graph-image.png",
+            ogImage: {openGraph},
             ogImageAlt: "QuickWhatsapp",
             ogImageWidth: 1200,
             ogImageHeight: 630,
