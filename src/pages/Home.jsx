@@ -140,7 +140,7 @@ const Home = () => {
         onClickDelete={onClickDelete}
         urlToWhatsapp={urlToWhatsapp}
       />
-      {!navigator.share ? null : <MobileShare />}
+      {navigator.share ? <MobileShare /> : null }
         
       
     </div>
