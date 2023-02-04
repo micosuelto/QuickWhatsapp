@@ -4,7 +4,6 @@ import InfoApp from "../components/InfoApp";
 import PhoneNumber from "../components/PhoneNumber";
 import Keyboard from "../components/Keyboard";
 import { SuperSEO } from "react-super-seo";
-import openGraph from '../assets/open-graph-image.png';
 
 
 const Home = () => {
@@ -119,7 +118,7 @@ const Home = () => {
         lang="en"
         openGraph={{
           ogImage: {
-            ogImage: `${openGraph}`,
+            ogImage: '/open-graph-image.png',
             ogImageAlt: "QuickWhatsapp",
             ogImageWidth: 1200,
             ogImageHeight: 630,
