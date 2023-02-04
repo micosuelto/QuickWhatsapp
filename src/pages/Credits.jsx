@@ -19,7 +19,7 @@ const Credits = () => {
             ogImageAlt: "QuickWhatsapp",
             ogImageWidth: 1200,
             ogImageHeight: 630,
-            ogImageType: "image/png",
+            ogImageType: "image/jpg",
           },
         }}
       />
