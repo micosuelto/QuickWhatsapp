@@ -4,7 +4,7 @@ import InfoApp from "../components/InfoApp";
 import PhoneNumber from "../components/PhoneNumber";
 import Keyboard from "../components/Keyboard";
 import { SuperSEO } from "react-super-seo";
-
+import MobileShare from "../components/MobileShare";
 
 const Home = () => {
   let [localStorageDialCode, setLocalStorageDialCode] = useState(
@@ -140,6 +140,7 @@ const Home = () => {
         onClickDelete={onClickDelete}
         urlToWhatsapp={urlToWhatsapp}
       />
+      <MobileShare />
     </div>
   );
 };
