@@ -14,7 +14,7 @@ const NotFound = () => {
         lang="en"
         openGraph={{
           ogImage: {
-            ogImage: {openGraph},
+            ogImage: `${openGraph}`,
             ogImageAlt: "QuickWhatsapp",
             ogImageWidth: 1200,
             ogImageHeight: 630,

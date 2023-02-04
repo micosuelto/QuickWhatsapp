@@ -94,7 +94,7 @@ const Home = () => {
   };
 
   //**** Help Console.log Data ****//
-  const showData = true;
+  const showData = false;
   showData &&
     console.log(`
     >> HELP DATA INFO <<
@@ -119,7 +119,7 @@ const Home = () => {
         lang="en"
         openGraph={{
           ogImage: {
-            ogImage: {openGraph},
+            ogImage: `${openGraph}`,
             ogImageAlt: "QuickWhatsapp",
             ogImageWidth: 1200,
             ogImageHeight: 630,
