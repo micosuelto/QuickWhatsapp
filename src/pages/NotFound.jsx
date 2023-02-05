@@ -3,8 +3,10 @@ import "../styles/NotFound.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { SuperSEO } from "react-super-seo";
+import { useTranslation } from "react-i18next";
 
 const NotFound = () => {
+  const { t } = useTranslation();
   return (
     <div className="page404">
       <SuperSEO
@@ -22,9 +24,9 @@ const NotFound = () => {
         }}
       />
       <FontAwesomeIcon icon={faXmark} size="3x" />
-      <h2>Page not found.</h2>
+      <h2>{t("notFound")}</h2>
       <p>
-        <a href="/">Back to home</a>.
+      <a href="/">{t("back")}</a>.
       </p>
     </div>
   );

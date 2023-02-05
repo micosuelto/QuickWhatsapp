@@ -5,11 +5,12 @@
     bottom: 0;
     background: $light;
     .container{
-        display: flex;
+        display: grid;
         align-items: center;
         justify-content: space-between;
         gap: .5rem;        
         height: $headerHeight;
+        grid-template-columns: 75% 25%;
     }
     h1{
         text-transform: uppercase;
@@ -26,17 +27,23 @@
         }
     }
     .slogan{
-        font-family: $fontBasic;
         white-space: nowrap;
         text-overflow: ellipsis;
         line-height: 1;
         font-size: 14px;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
     }
-    .info{
+    .developed{
         text-align: right;
         line-height: 1.1;
         font-size: 14px;
         color: $black;
+        white-space: nowrap;
+        span{
+            color: $secondary;
+        }
     }
 
 }

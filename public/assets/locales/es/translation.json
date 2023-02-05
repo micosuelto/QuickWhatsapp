@@ -1,0 +1,7 @@
+{
+    "slogan": "Chatea con contactos no guardados.",
+    "share": "Compartir esta App",
+    "developed": "Desarrollado por <span>micoSuelto</span>",
+    "about": "<h2>Mi mamá detesta guardar contactos solo para escribirles por<span class=\"text-secondary\"> Whatsapp</span>.</h2><h2>Esta es una sencilla App para aquellos que sufren de lo mismo.</h2><p>Es mi primera PWA con ReactJS. Siéntete libre de criticar estas líneas.</p><p>Este es mi GitHub.</p>",
+    "back": "Volver al App"
+}

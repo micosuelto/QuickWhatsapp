@@ -6,10 +6,15 @@
     align-self: center;
     cursor: default;
     transition: all .2s ease;
+    font-size: .9rem;
+    border-left: 1px solid;
+    text-align: center;
+
     &:hover{
         color: $black;
     }
     svg{
-        margin-right: .5rem;
+        display: block;
+        margin: 0 auto;
     }
 }

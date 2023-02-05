@@ -1,12 +1,14 @@
-import React from 'react';
-import '../styles/global.scss';
-import '../styles/credits.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { SuperSEO } from 'react-super-seo';
-import logo from '../assets/logo.svg';
+import React from "react";
+import "../styles/global.scss";
+import "../styles/credits.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { SuperSEO } from "react-super-seo";
+import logo from "../assets/logo.svg";
+import { useTranslation } from "react-i18next";
 
 const Credits = () => {
+  const { t } = useTranslation();
   return (
     <React.Fragment>
       <SuperSEO
@@ -15,7 +17,7 @@ const Credits = () => {
         lang="en"
         openGraph={{
           ogImage: {
-            ogImage: 'https://quickwhatsapp.newsite.co/opengraph.jpg',
+            ogImage: "https://quickwhatsapp.newsite.co/opengraph.jpg",
             ogImageAlt: "QuickWhatsapp",
             ogImageWidth: 1200,
             ogImageHeight: 630,
@@ -26,30 +28,28 @@ const Credits = () => {
       <div id="credits-page">
         <div className="container">
           <p>
-            <img src={logo} alt="QuickWhatsapp" title="QuickWhatsapp" width="90px" height="90px" />
+            <img
+              src={logo}
+              alt="QuickWhatsapp"
+              title="QuickWhatsapp"
+              width="90px"
+              height="90px"
+            />
           </p>
-          <h2>
-            My mom detests saving contacts just so she can write to them on 
-            <span className="text-secondary"> Whatsapp</span>.
-          </h2>
-          <h2>
-            This is a simple app for those who are suffering from the same.
-          </h2>
-
+          <div dangerouslySetInnerHTML={{ __html: t("about") }} />
           <p>
-            It's my first PWA with ReactJS. Feel free to punish those lines.
-          </p>
-          <p>
-            This is my GitHub.
-          </p>
-          <p>
-            <a href="https://github.com/micosuelto" target="_blank" rel="noreferrer" className="github-link">
+            <a
+              href="https://github.com/micosuelto"
+              target="_blank"
+              rel="noreferrer"
+              className="github-link"
+            >
               <FontAwesomeIcon icon={faGithub} />
-               /micosuelto
+              /micosuelto
             </a>
           </p>
           <p>
-            <a href="/">Back to app</a>.
+            <a href="/">{t("back")}</a>.
           </p>
         </div>
       </div>

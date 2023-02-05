@@ -27,7 +27,7 @@
 .react-tel-input .flag-dropdown.open .selected-flag{
     background-color: $light;
 }
-
+#home-page.us .react-tel-input .form-control,
 #home-page.co .react-tel-input .form-control{
     font-size: 40px;
     @media (min-width: $xsm) {

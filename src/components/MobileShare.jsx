@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles/ShareApp.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
+import { faShareFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 
 
@@ -23,11 +24,12 @@ const MobileShare = () => {
         });
     }
   };
-  
+  const { t } = useTranslation();
+
     return (
       <div className='share-icon' onClick={handleOnClick}>
-        <FontAwesomeIcon icon={faShareNodes} />
-        Share this app
+        <FontAwesomeIcon icon={faShareFromSquare} />
+        {t('share')}
       </div>
     );
   };

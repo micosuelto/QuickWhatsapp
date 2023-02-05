@@ -1,0 +1,15 @@
+@import "vars";
+
+footer{
+    text-align: center;
+    align-self: center;
+    cursor: default;
+    transition: all .2s ease;
+    font-size: .9rem;
+    a{
+        color: $black;
+    }
+    span{
+        color: $secondary;
+    }
+}

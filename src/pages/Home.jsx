@@ -3,8 +3,10 @@ import { useState, useEffect } from "react";
 import InfoApp from "../components/InfoApp";
 import PhoneNumber from "../components/PhoneNumber";
 import Keyboard from "../components/Keyboard";
+import Closure from "../components/Closure";
 import { SuperSEO } from "react-super-seo";
-import MobileShare from "../components/MobileShare";
+import i18n from 'i18next';
+import {changeLanguage} from '../i18nextConf';
 
 const Home = () => {
   let [localStorageDialCode, setLocalStorageDialCode] = useState(
@@ -28,6 +30,9 @@ const Home = () => {
     }
   }, [rawPhoneValue, localStorageDialCode]);
 
+  
+
+
   //**** Default Local Storage ****//
   // Update Local Storage
   const updateDefaultCountry = (dialCode, countryCode) => {
@@ -36,6 +41,7 @@ const Home = () => {
     console.log(
       `Country saved in localstorage: +${localStorage.defaultDialCode} / ${localStorage.defaultCountryCode}`
     );
+    changeLanguage(countryCode);
   };
 
   if (!localStorageDialCode && !localStorageCountryCode) {
@@ -43,6 +49,7 @@ const Home = () => {
     setLocalStorageCountryCode("co");
     updateDefaultCountry("57", "co");
     setphoneValue(`${localStorage.defaultDialCode}`);
+    i18n.changeLanguage('es');
     return;
   }
 
@@ -92,8 +99,10 @@ const Home = () => {
     }
   };
 
+
+
   //**** Help Console.log Data ****//
-  const showData = false;
+  const showData = true;
   showData &&
     console.log(`
     >> HELP DATA INFO <<
@@ -106,6 +115,7 @@ const Home = () => {
     })
     >> Current phoneValue is: +${phoneValue}
     >> ${isBtnON ? "Action's buttons are ON" : "Action's buttons are OFF"}
+    >> Current Language: ${i18n.language}
   `);
 
   return (
@@ -141,8 +151,9 @@ const Home = () => {
         urlToWhatsapp={urlToWhatsapp}
       />
     
-      {!navigator.share ? <MobileShare /> : null }
-        
+      
+      
+      <Closure />
       
     </div>
   );

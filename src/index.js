@@ -1,9 +1,11 @@
 import React from 'react';
+import "./i18nextConf";
 import ReactDOM from 'react-dom/client';
 import App from "./routes/App.jsx";
+
 // Service Worker
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-
+// Report Web Vitals
 import reportWebVitals from './reportWebVitals';
 // Import Google Analytics
 import ReactGA from "react-ga4";
@@ -12,7 +14,7 @@ ReactGA.initialize(TRACKING_ID);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <React.StrictMode> 
     <App tab="home"/>
   </React.StrictMode>
 );
